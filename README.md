@@ -4,8 +4,8 @@ Coding Bootcamp - "Appleseeds"
 
 main topics:
 
-✔️ HTML
-✔️ CSS
-⭕ Javascript
-⭕ React
+✔️ HTML<br />
+✔️ CSS<br />
+⭕ Javascript<br />
+⭕ React<br />
 ⭕ Nodejs
