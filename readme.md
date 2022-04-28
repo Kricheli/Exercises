@@ -4,7 +4,7 @@ Coding Bootcamp - 'sayeret tichnot'
 
 main topics:
 
-✔️ HTML
+✔️ HTML<br />
 ✔️ CSS
 ✔️Javascript
 ✔️React
