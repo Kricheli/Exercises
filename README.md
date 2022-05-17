@@ -6,6 +6,6 @@ main topics:
 
 ✔️ HTML<br />
 ✔️ CSS<br />
-⭕ Javascript<br />
+✔️ Javascript<br />
 ⭕ React<br />
 ⭕ Nodejs
