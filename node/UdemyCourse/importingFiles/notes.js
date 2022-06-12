@@ -1,1 +1,0 @@
-const remainder=(text)=>{return `Don't forget to: ${text}`}
