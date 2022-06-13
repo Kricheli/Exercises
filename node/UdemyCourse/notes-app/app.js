@@ -1,21 +1,64 @@
-const validator = require("validator");
 const chalk = require("chalk");
-//? const remainder = require("./notes.js");
+const yargs = require("yargs");
+const notes = require("./notes.js");
 
-console.log("====================================");
-//? const fs = require("fs");
-//? fs.writeFileSync(
-//?   "notes.js",
-//?   "const remainder=(text)=>{return `Don't forget to: ${text}`}"
-//? );
-//? const note = remainder(" Walk the dog");
 
-// ? console.log(note);
-console.log("====================================");
-console.log("");
-console.log(validator.isURL("https://blank-page.com"));
-console.log(chalk.green("success"));
-console.log(chalk.inverse("whiteBackground"));
-console.log(chalk.magentaBright.italic.bold("italic"));
-console.log(chalk.hidden("John Cena"));
-console.log(chalk.red.bold("look at me"));
+yargs.command({
+  command: "add",
+  describe: "Add a new note",
+  builder: {
+    title: {
+      describe: "Note title",
+      demandOption: true,
+      type: "string",
+    },
+    body: {
+      describe: "Note data",
+      demandOption: true,
+      type: "string",
+    },
+  },
+  handler(argv) {
+    notes.addNote(argv.title, argv.body);
+  },
+});
+
+yargs.command({
+  command: "remove",
+  describe: "Removing a note from the list",
+  builder: {
+    title: {
+      describe: "Note title",
+      demandOption: true,
+      type: "string",
+    },
+  },
+  handler(argv) {
+    notes.removeNote(argv.title);
+  },
+});
+
+yargs.command({
+  command: "read",
+  describe: "Reading a note",
+  builder: {
+    title: {
+      describe: "Note title",
+      demandOption: true,
+      type: "string",
+    },
+  },
+  handler(argv) {
+    notes.readNotes(argv.title);
+  },
+});
+
+yargs.command({
+  command: "list",
+  describe: "Listing the notes",
+  handler() {
+    notes.listNote();
+  },
+});
+
+yargs.parse();
