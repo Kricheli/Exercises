@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class vs. ID</title>
+  <style>
+    .card{
+      background-color: lightgrey;
+      border: 1px solid grey;
+      margin-bottom: 1rem;
+      padding: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .enhance{
+      color: yellow;
+      background-color: black;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="main-header">
+    <h1>My Website</h1>
+    <p>A site about <div class="enhance">me</div></p>
+  </div>
+  <div id="main-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div id="about" class="card">
+    <h3>About</h3>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quam culpa dolore beatae sint provident vitae iste error in. Dolorem nobis laudantium nihil qui pariatur at iusto voluptatem aut <span class="enhance">ab!</span>
+  </div>
+  <div id="contact" class="card">
+    <h3>Contact Me</h3>
+    <ul>
+      <li>Adress:50 Main st.Boston MA</li>
+      <li>Phone: (555) 555-5555</li>
+      <li>Email: me@gmail.com</li>
+    </ul>
+  </div>
+  <div id="footer">
+    Copyright 2019 &copy; 
+  </div>
+
+</body>
+</html>
