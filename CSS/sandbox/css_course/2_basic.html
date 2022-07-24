@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selectors</title>
+    <style>
+      body{
+        background-color: lightpink;
+      }
+      .primary-heading {
+        color: green;
+      }
+      #welcome {
+        background-color: lightblue;
+        border: 1px solid blanchedalmond;
+      }
+      #about {
+        background-color: lightcyan;
+        border: 1px solid darkslategrey;
+      }
+      #welcome,
+      #about {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px 0;
+        padding: 10px;
+        border-radius: 50px;
+      }
+      #about p{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2 class="primary-heading">Welcome to my Website</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed dolor quas
+        reiciendis autem at saepe aperiam vero, eos impedit eius.
+      </p>
+    </div>
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolore
+        aspernatur voluptatibus necessitatibus totam unde deserunt consequatur
+        nostrum repudiandae eligendi?
+      </p>
+    </div>
+  </body>
+</html>
