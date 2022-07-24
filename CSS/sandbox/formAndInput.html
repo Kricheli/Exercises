@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms & Input</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name" placeholder="Enter Your Name..."/>
+      </div>
+      <div>
+        <label for="email">Email</label><br />
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="message">Message</label><br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other" selected>Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age" />
+      </div>
+      <div>
+        <label for="birthday">Birthday</label><br />
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+      <div>
+        <label for="membership">Membership</label>
+        <input type="radio" name="membership" id="membership" value="simple" />Simple
+        <input
+        type="radio"
+        name="membership"
+        id="membership"
+        value="standard"
+        />Standard
+        <input
+        type="radio"
+        name="membership"
+        id="membership"
+        value="advenced" checked
+        />Advanced
+      </div>
+      <div>
+        <label for="membership">Membership</label>
+        <input type="checkbox" name="likes" id="likes" value="Bike" />Bike
+        <input
+        type="checkbox"
+        name="likes"
+        id="likes"
+        value="Car"
+        />Car
+        <input
+        type="checkbox"
+        name="likes"
+        id="likes"
+        value="airplane" 
+        />Airplane
+      </div>
+      <div>
+        <input type="submit" value="submit" />
+        <button type="submit">Submit</button>
+      </div>
+      <div>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+  </html>
+  
