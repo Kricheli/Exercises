@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menue Styling</title>
+    <style>
+      .navbar{
+        list-style:none;
+        margin:0;
+        padding:0;
+        background-color: #4c6ca0;
+        border-radius: 4px;
+        overflow: auto;
+      }
+      .navbar li{
+        float: left;
+      }
+      .navbar li a{
+        color: white;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 15px 20px ;
+      }
+      .side-menue {
+        list-style: none;
+        border: 1px solid lightgray;
+        width: 100px;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .side-menue li {
+        font-size: 18px;
+        line-height: 2.4em;
+        border-bottom: #ddd dotted 1px;
+      }
+      .side-menue li:last-child {
+        font-size: 24px;
+      }
+      .side-menue li a {
+        color: #333;
+        text-decoration: none;
+      }
+      .side-menue li a:hover {
+        color: lightseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <br /><br />
+    <ul class="side-menue">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </body>
+</html>
