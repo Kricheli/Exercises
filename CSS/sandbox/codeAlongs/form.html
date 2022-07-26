@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form Styling</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(44, 64, 104);
+        padding: 0;
+        margin: 0;
+        line-height: 1.8;
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+      }
+      a {
+        text-decoration: none;
+      }
+      .formWrap {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .container {
+        max-width: 300px;
+        margin: 50px auto;
+        height: 600px;
+      }
+      .header {
+        text-align: center;
+      }
+      button {
+        background-color: rgb(65, 185, 152);
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        padding: 10px;
+        width: 90%;
+        border-radius: 10px;
+        color: white;
+        display: block;
+        margin: auto;
+        cursor: pointer;
+      }
+      .inputs input {
+        background-color: white;
+        border: 1px lightgray solid;
+        padding: 10px;
+        width: 90%;
+        margin: 10px;
+      }
+      .inputs label {
+        display: block;
+        margin-left: 10px;
+      }
+      .terms {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 15px;
+      }
+      .footer {
+        color: white;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="formWrap">
+        <div class="header">
+          <h1>Sign Up</h1>
+          <p>It's free and only takes a minute</p>
+        </div>
+        <div class="inputs">
+          <label id="first_n" for="name">First Name</label>
+          <input type="text" name="first_n" id="first_n" />
+          <label id="last_n" for="name">Last Name</label>
+          <input type="text" name="last_n" id="last_n" />
+          <label id="email" for="email">Email</label>
+          <input type="text" name="email" id="email" />
+          <label id="password" for="name">Password</label>
+          <input type="text" name="password" id="password" />
+          <label id="confirmPassword" for="name">Confirm Password</label>
+          <input type="text" name="confirmPassword" id="confirmPassword" />
+        </div>
+        <button>Sign Up</button>
+        <div class="terms">
+          <p>
+            By clicking the Sign Up button you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Already have an account? <a href="#">Login Here</a></p>
+      </div>
+    </div>
+  </body>
+</html>
