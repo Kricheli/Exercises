@@ -37,5 +37,5 @@ p {
 #navbar ul {
   display: flex;
   list-style: none;
-  justify-content: flex-en;
+  justify-content: flex-end;
 }
