@@ -61,8 +61,11 @@ p {
   color: #333;
 }
 .bg-primary {
-  background: #333;
-  color: #f7c08a;
+  background: #f7c08a;
+  color: #333;
+}
+.clr{
+  clear: both;
 }
 /* Navbar */
 #navbar {
@@ -134,4 +137,26 @@ p {
 }
 #home-info .info-content p {
   padding-bottom: 30px;
+}
+
+/* Boxes Section */
+.box{
+  width: 33.3%;
+  display: inline-block;
+  float: left;
+  padding: 50px;
+  text-align:center;
+}
+.box i{
+  margin-bottom:10px ;
+}
+
+/* Footer */
+
+#main-footer {
+  text-align: center;
+  font-size:20px;
+  padding: 20px;
+  background-color: #444;
+  color: white;
 }
