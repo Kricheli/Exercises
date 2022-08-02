@@ -14,8 +14,8 @@
       }
       .flex-container {
         display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
       }
       .item {
         border: 2px solid rgb(155, 106, 113);
@@ -25,6 +25,10 @@
         text-align: center;
         border-radius: 10px;
         width: 200px;
+        flex: 1;
+      }
+      .item-3 {
+        flex: 2;
       }
     </style>
   </head>
