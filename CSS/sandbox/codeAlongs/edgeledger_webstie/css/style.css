@@ -117,7 +117,39 @@ img {
   margin-bottom: 15px;
   padding: 1rem;
 }
-header,
-#about {
-  display: none;
+.hero,
+#about,
+.solutions {
+  /* display: none; */
+}
+/* Cases */
+
+.cases img:hover {
+  opacity: 0.7;
+}
+
+.team img {
+  border-radius: 50%;
+}
+/* Contact */
+.inputs input {
+  border: none;
+  padding: 10px;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.contact {
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.contact i {
+  padding: 10px;
+}
+.contact p{
+  display: block;
 }
