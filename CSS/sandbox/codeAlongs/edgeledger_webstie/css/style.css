@@ -97,6 +97,7 @@ img {
 }
 /* ================== About =================== */
 
+
 #about .flex-items {
   display: flex;
 }
@@ -150,6 +151,50 @@ img {
 .contact i {
   padding: 10px;
 }
-.contact p{
+.contact p {
   display: block;
+}
+
+/* CallBack Form */
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: lightgray 1px solid;
+}
+.callback-form input:focus {
+  outline-color: #28a745;
+}
+
+.callback-form .btn {
+  border: none;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 10px;
+}
+.footer a {
+  color: #fff;
+  padding: 10px;
+}
+footer a:hover {
+  color: #28a745;
 }

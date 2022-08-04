@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+  .navbar a {
+    padding: 10px;
+    margin: 0 3px;
+  }
+  .flex-items {
+    flex-direction: column;
+  }
+  .flex-items > div {
+    border-bottom: 1px solid #333;
+  }
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .team img {
+    width: 70%;
+  }
+}
