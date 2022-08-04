@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -18,7 +19,7 @@
   </head>
   <body>
     <header class="hero blog">
-      <div class="navbar" id="navbar">
+      <div class="navbar top" id="navbar">
         <h1 class="logo">
           <span class="text-primary">
             <i class="fas fa-book-open"></i> Edge</span
@@ -46,7 +47,7 @@
           ><strong>&nbsp;&nbsp;&nbsp;&nbsp;Posted by John Doe</strong>
           | February 19 2020
         </p>
-        <img src="./image_resources/blog/blog1.jpg" alt="blog post 1">
+        <img src="./images/blog/blog1.jpg" alt="blog post 1">
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae sed
           pariatur unde blanditiis temporibus in debitis error sunt, molestiae
@@ -82,5 +83,24 @@
       </div>
       <p>Copyright &copy; 2020 by Annonymouse</p>
     </footer>
+    <script>
+       const navbar = document.getElementById('navbar')
+      let scrolled = false
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top')
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)'
+          }
+          setTimeout(() => {
+            navbar.style.transform = 'translateY(0)'
+            scrolled = true
+          }, 400)
+        } else {
+          navbar.classList.add('top')
+          scrolled = false
+        }
+      }
+    </script>
   </body>
 </html>
