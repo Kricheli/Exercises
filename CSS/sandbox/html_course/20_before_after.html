@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before & After</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #333;
+        color: #fff;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+      }
+      header:before {
+        content: '';
+        background: url('https://picsum.photos/800') no-repeat center
+          center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        z-index: -1;
+      }
+      header > h1 {
+        font-size: 3rem;
+        margin: 1rem;
+        border-bottom: 1px solid #bfafaf;
+      }
+      .is-required::after {
+        content: '*';
+        color: #ff0000;
+        font-size: 15px;
+        padding: 0 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <form>
+      <label for="name" class="is-required">Name</label>
+      <input type="text" />
+    </form> -->
+    <header>
+      <h1>Hello World</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nihil!
+      </p>
+    </header>
+    <section>
+      <h3>Lorem, ipsum dolor.</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit maxime
+        tempora cumque, minima placeat quasi.Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Sit maxime tempora cumque, minima placeat
+        quasi.
+      </p>
+    </section>
+  </body>
+</html>
