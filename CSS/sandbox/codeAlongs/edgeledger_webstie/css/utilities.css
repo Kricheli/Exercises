@@ -34,7 +34,7 @@
   background: #333;
   color: #fff;
 }
-.btn-light .bg-light {
+.btn-light, .bg-light {
   background: #fff;
   color: #333;
 }
