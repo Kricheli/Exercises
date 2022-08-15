@@ -6,3 +6,8 @@
     @return #fff;
   }
 }
+
+// Transform Mixin
+@mixin transform($property) {
+  transform: $property;
+}

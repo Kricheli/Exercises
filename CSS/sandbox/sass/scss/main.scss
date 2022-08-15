@@ -61,5 +61,8 @@ a {
     @extend %btn-shared;
     background: $dark-color;
     color: set-text-color($dark-color);
+  &:hover{
+    @include transform(rotate(90deg))
+  }
   }
 }
