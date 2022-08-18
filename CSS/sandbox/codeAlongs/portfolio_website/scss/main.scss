@@ -16,12 +16,16 @@ a {
   color: $dark-color;
   border: none;
 }
-h1,
+ul{
+  list-style: none;
+}
 h2,
 h3,
-h4,
-h5 {
-  text-align: center;
+h4{
+  text-transform: uppercase;
+}
+img{
+  width: 100%;
 }
 #showcase .showcase-container {
   background: url('../img/showcase.jpg') no-repeat center center/cover;
