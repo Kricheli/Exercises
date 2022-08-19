@@ -1,8 +1,7 @@
 # Bootcamp Exercises
 
 Coding Bootcamp - "Appleseeds"
-
-main topics:
+ topics:
 
 ✔️ HTML<br />
 ✔️ CSS<br />
