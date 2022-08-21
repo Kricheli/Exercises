@@ -1,0 +1,7 @@
+@import '_config';
+.container{
+  max-width: $website-width ;
+  padding: $py-2;
+  margin: auto;
+  overflow: hidden;
+}

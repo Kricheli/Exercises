@@ -1,3 +1,9 @@
+.container {
+  max-width: 1280px;
+  padding: 0 2rem;
+  margin: auto;
+  overflow: hidden; }
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +12,7 @@
 body {
   font-family: "Dosis", sans-serif;
   line-height: 1.5;
-  background: #fff;
+  background: url("../img/showcase.png") no-repeat center right/cover;
   height: 100vh; }
 
 a {
@@ -14,14 +20,24 @@ a {
   color: #333;
   border: none; }
 
-h1,
+ul {
+  list-style: none; }
+
 h2,
 h3,
-h4,
-h5 {
-  text-align: center; }
+h4 {
+  text-transform: uppercase; }
 
-#showcase .showcase-container {
-  background: url("../img/showcase.jpg") no-repeat center center/cover;
-  height: 100%;
+img {
   width: 100%; }
+
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase; }
+
+#header_home {
+  background: url("../img/showcase.png") no-repeat center right/cover;
+  height: 100vh;
+  color: #fff; }
